@@ -31,8 +31,8 @@ ul{
     position: relative;
     background: linear-gradient(120deg,#3709ed,#c1b5c8);
     display: grid;
-    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1.5fr 0.5fr;
-    grid-template-columns: 1fr 1fr 1f 1fr;
+    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 1.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     height: 100%;
     grid-template-areas:
@@ -40,6 +40,7 @@ ul{
     "head head head head"
     "mi mi mi mi"
     "servi servi servi servi"
+    "gale gale gale gale"
     "proyec proyec proyec proyec"
     "contac contac contac contac"
     "pie pie pie pie"
@@ -131,6 +132,64 @@ ul{
     margin-top: 1%;
     padding: 4%;
     
+}
+.galeria{
+   grid-area: gale;
+   height: 100%;
+  
+   border-bottom: 3px solid blue;
+}
+.fila-50{
+    height: 23%;
+    width: 100%;
+    float: flex;
+    display: flex;
+    padding-bottom: .5%;
+    
+     
+}
+.fila-100{
+    height: 23%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: .5%;
+    
+}
+.titulo-galeria{
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline black;
+    align-items: center;
+   
+}
+.galeria h2{
+    display: flex;
+    justify-content: center;
+    
+}
+.galeria img{
+   
+    filter: grayscale(1);
+      
+    
+}
+.img-50{
+    width: 100%;
+    height: 100%;
+
+
+}
+.img-100{
+    max-width: 60%;
+    height: 100%;
+}
+.recuadro{
+    width: 50%;
+    height: 100%;
+    
+
 }
 .proyectos{
     margin-top: 5%;
