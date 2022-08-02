@@ -3,14 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    font-size: 7vw;
+}
+h2{
+    font-size: 6vw;
+}
+h3{
+    font-size: 5vw;
+}
+p{
+    font-size: 3vw;
+}
 body{
     font-family: "Roboto";
     font-size: 100%;
 }
-a{ display: inline-block;
+a{ 
+   
     text-decoration: none;
     color: white;
-    font-size: 4vw;  
+  
+   
 }
 a:hover{
     color:orangered;
@@ -23,15 +37,13 @@ p{
 }
 ul{
     list-style-type: square;
-    
-    
+       
 }
-
 .cuerpo{
     position: relative;
-    background: linear-gradient(120deg,#3709ed,#c1b5c8);
+    background: linear-gradient(120deg,#2b201e,#d9d6e9);
     display: grid;
-    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 1.5fr 0.5fr;
+    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 1.5fr 0.5fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     height: 100%;
@@ -44,6 +56,7 @@ ul{
     "proyec proyec proyec proyec"
     "contac contac contac contac"
     "pie pie pie pie"
+    "publi publi publi publi"
      ;
 
 }
@@ -58,19 +71,39 @@ ul{
 .img1{
     max-width:100%;
     height: auto;
-    
-
+    filter: grayscale(40%);
 }
 .navegador{
     position: fixed;
     width: 100%;
     grid-area: nav;
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color:white;
     z-index: 12;
+    min-height:3%;
+    max-height: 10%;
+    padding: 1% 0 1% 0;
+  
+    
 }
+
+.navegador li{
+    display: inline;
+    min-width: 16.6%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #bbb ;
+    max-width: 20%;
+    font-size: 3.2vw;
+    
+    
+           
+}
+.navegador li:hover{
+    background-color: aqua;
+}
+
 .cabecera{
     grid-area: head;
     z-index: 10;
@@ -81,13 +114,13 @@ ul{
 .cabecera h1{
     margin-top: 3%;
     font-size: 9vw;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px .1px black;
 }
 .cabecera p{
     margin-top: 6%;
     margin-right: 33%;
     color: white;
-    text-shadow: 2px 2px black,0 0 5px #0000ff;
+    text-shadow: 2px 0.01px black,0 0 5px #0000ff;
     font-size: 4vw;
 }
 .sobremi{
@@ -242,5 +275,30 @@ ul{
 }
 .img2{
     max-width: 20%;
+    
+}
+.publi{
+    
+    max-height:7%;
+    
+    width: 100%;
+    position: fixed;
+    grid-area: publi;
+    z-index: 13;
+    background-color: #c1b5c8;
+    top:93.5%;
+    display: flex;
+    justify-content: center;
+    
+    
+     
+    
+}
+
+.gif-1{
+    margin: 0;
+    padding: 0;
+    transform: scale(0.7);
+    align-items: flex-start;
     
 }
