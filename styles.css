@@ -16,15 +16,11 @@ p{
     font-size: 3vw;
 }
 body{
-    font-family: "Roboto";
-    font-size: 100%;
+    font-family: "Roboto";    
 }
 a{ 
-   
     text-decoration: none;
-    color: white;
-  
-   
+    color: white;    
 }
 a:hover{
     color:orangered;
@@ -37,13 +33,12 @@ p{
 }
 ul{
     list-style-type: square;
-       
 }
 .cuerpo{
     position: relative;
     background: linear-gradient(120deg,#2b201e,#d9d6e9);
     display: grid;
-    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 1.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 1.5fr 0.5fr 0.5fr 1fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     height: 100%;
@@ -56,17 +51,17 @@ ul{
     "proyec proyec proyec proyec"
     "contac contac contac contac"
     "pie pie pie pie"
+    "cola cola cola cola"
     "publi publi publi publi"
-     ;
-
+    "config config config config"
+    ;
 }
 .fondo{
     position: absolute;
     z-index: 1;
     display:flex;
     justify-content: center;
-    width: 100%;
-       
+    width: 100%;       
 }
 .img1{
     max-width:100%;
@@ -80,24 +75,21 @@ ul{
     background-color: rgb(40, 40, 40);
     color:white;
     z-index: 12;
-    min-height:3%;
-    max-height: 10%;
-    padding: 1% 0 1% 0;
-  
-    
+    min-height:4%;
+    max-height: 13%;
+    padding: 1% 7% 1% 7%;    
 }
-
 .navegador li{
     display: inline;
-    min-width: 16.6%;
+    max-width: 24%;
+    min-width: 15%;
     float: left;
     height: 100%;
     text-align: center;
-    border-right: 1px solid #bbb ;
+    border: 1px solid #bbb ;
+    background-color: rgb(75, 196, 38);
     max-width: 20%;
-    font-size: 3.2vw;
-    
-    
+    font-size: 3.2vw;        
            
 }
 .navegador li:hover{
@@ -278,27 +270,58 @@ ul{
     
 }
 .publi{
-    
-    max-height:7%;
-    
+    min-height: 8%;
+    max-height:9%;
     width: 100%;
     position: fixed;
     grid-area: publi;
     z-index: 13;
     background-color: #c1b5c8;
-    top:93.5%;
+    top:91%;
     display: flex;
     justify-content: center;
-    
-    
-     
     
 }
 
 .gif-1{
     margin: 0;
     padding: 0;
-    transform: scale(0.7);
+    transform: scale(0.6);
     align-items: flex-start;
+    }
+.cola{
+    min-height: 100px;
+    max-height:10px;
+    width: 100%;
+    position: relative;
+    grid-area: publi;
+    z-index: 1;
+    background-color: #c1b5c8;
+    display:flex;
+    justify-content:center;
+    
+}
+.menu{
+    width: 100%;
+    padding: 0 100% 0 100%;   
+}
+.config{
+    min-height: 4%;
+    max-height:5%;
+    min-width: 50%;
+    max-width: 60%;
+    position: fixed;
+    grid-area: config;
+    z-index: 13;
+    background-color: #c1b5c8;
+    top:85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+    
+}
+.png-2{
+    transform: scale(0.3);
     
 }
