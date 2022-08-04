@@ -13,7 +13,7 @@ h3{
     font-size: 5vw;
 }
 p{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 body{
     font-family: "Roboto";    
@@ -30,15 +30,17 @@ a:active{
 }
 p{
     text-align: justify;
+   
 }
 ul{
     list-style-type: square;
+    
 }
 .cuerpo{
     position: relative;
     background: linear-gradient(120deg,#2b201e,#d9d6e9);
     display: grid;
-    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 1.5fr 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     height: 100%;
@@ -121,7 +123,7 @@ ul{
     margin-top: 6%;
     margin-right: 33%;
     color: white;
-    text-shadow: 2px 0.01px black,0 0 5px #0000ff;
+    text-shadow: 2px 0.01px black,0 0 3px  #122142;
     font-size: 4vw;
 }
 .sobremi{
@@ -130,7 +132,7 @@ ul{
     margin-top: 20%;
     padding: 7%;
     z-index: 10;
-    border-bottom: 3px solid blue;
+    border-bottom: 2px solid  #122142;
 }
 
 .sobremi h3,p{
@@ -152,7 +154,7 @@ ul{
     padding: 7%;
     grid-area: servi;
     z-index: 10;
-    border-bottom: 3px solid blue;
+    border-bottom: 2px solid  #122142;
 }
 .servicios h2{
     display: flex;
@@ -160,8 +162,6 @@ ul{
     text-decoration: underline black;
     margin-bottom: 7%;
 }
-
-
 .servicios h3{
     margin-top: 1%;
     padding: 4%;
@@ -171,7 +171,7 @@ ul{
    grid-area: gale;
    height: 100%;
   
-   border-bottom: 3px solid blue;
+   border-bottom: 2px solid  #122142;
 }
 .fila-50{
     height: 23%;
@@ -244,28 +244,71 @@ ul{
     margin-bottom: 7%;
 }
 .contactame{
-    margin-top: 1%;
-    padding: 7%;
+    display: block;  
+    padding: 1% 1% 2% 7%;
     grid-area: contac;
     z-index: 10;
-    background-color: rgb(199, 199, 199);
-   
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    font-family: 'calibri';
+    margin: 0;
+    height: 100%;
+    overflow: auto;
 }
-.contactame h1{
-    margin: 5%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 7%;
-    text-decoration: underline black;
+.contactame h3{
+    color:white; 
+    margin: 0px; 
+    padding: 0px;
+    width: 100%;
+    
+}
+.form{
+    
+    border-width: 0 0 2px 0;       
+    width: 100%;
+    height: 100%;
+    font-size: 5vw; 
+    margin: 0;
+    padding: 0;
+    
+}
+.input{
+    width: 70%;
+    background-color: #24303c;
+    padding: 1%;
+    border-radius: 4px;
+    margin:0% 0 1% 0;
+    height: 13%;
+    border-bottom: 2px solid #1f53c5
+
+}
+.input2{
+    display: block;
+    width: 80%;
+    background-color: #24303c;
+    padding: 1%;
+    border-radius: 4px;
+    margin:0;
+    height: 25%;
+    border-bottom: 2px solid #1f53c5
+
+}
+.boton{
+    width: 20%;
+    border-radius: 3px;
+    background-color: #0e2f77;
+    border:none;
+    color:white;
+    margin: 1% 0 0 0;
+
+
+    font-size: 3.5vw;
 }
 .pie{
     display:flex;
-    
     grid-area: pie;
     z-index: 10;
     background-color: orange;
-    
-    
+       
 }
 .pie p{
     padding: 3%;
@@ -336,4 +379,3 @@ ul{
     margin: 0;
     
 }
-
