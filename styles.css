@@ -39,13 +39,13 @@ ul{
     
 }
 .cuerpo{
-    position: relative;
+    /*position: relative;*/
     background: linear-gradient(120deg,#2b201e,#d9d6e9);
     display: grid;
-    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1/4fr 1.4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    height: 100%;
+    /*height: 100%;*/
     grid-template-areas:
     "nav nav nav nav"
     "head head head head"
@@ -160,16 +160,15 @@ ul{
     
 
 }
-  /* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {background-color: #730707}
-  
-  /* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
   }
 
 .cabecera{
-    position: relative;
+    /*position: relative;*/
     grid-area: head;
     z-index: 10;
     margin-top: 5%;
@@ -189,7 +188,7 @@ ul{
     font-size: 4vw;
 }
 .sobremi{
-    position: relative;
+    /*position: relative;*/
        
     grid-area: mi;
     margin-top: 20%;
@@ -209,16 +208,13 @@ ul{
     text-decoration: underline black;
     text-align: center;
     margin: 5%;
-    margin-bottom: 7%;
-    
+    margin-bottom: 7%;    
 } 
-
-  
  
 .servicios{
-    position: relative;
-    margin-top: 5%;
-    padding: 7%;
+    /*position: relative;*/
+    /*margin-top: 0%;*/
+    padding: 10%;
     grid-area: servi;
     z-index: 10;
     border-bottom: 2px solid  #122142;
@@ -235,7 +231,7 @@ ul{
     
 }
 .galeria{
-    position: relative;
+    /*position: relative;*/
    grid-area: gale;
    height: 100%;
   
@@ -294,7 +290,7 @@ ul{
 
 }
 .proyectos{
-    position: relative;
+    /*position: relative;*/
     margin-top: 5%;
     padding: 7%;
     grid-area: proyec;
@@ -314,7 +310,7 @@ ul{
     margin-bottom: 7%;
 }
 .contactame{
-    position: relative;
+    /*position: relative;*/
     display: block;  
     padding: 1% 1% 2% 7%;
     grid-area: contac;
@@ -322,7 +318,7 @@ ul{
     background: linear-gradient(120deg,#2980b9,#8e44ad);
     font-family: 'calibri';
     margin: 0;
-    height: max(100%,250px);
+    height: 100%;
     overflow: auto;
     border-bottom: 2px solid  #122142;
 }
@@ -331,6 +327,7 @@ ul{
     margin: 0px; 
     padding: 0px;
     width: 100%;
+    margin-top: 4%;
     
 }
 .form{
@@ -339,8 +336,8 @@ ul{
     width: 100%;
     height: 100%;
     font-size: 5vw; 
-    margin: 0;
-    padding: 0;
+    margin: 1.5%;
+    padding: 1.5%;
     
 }
 .input{
@@ -349,7 +346,7 @@ ul{
     padding: 1%;
     border-radius: 4px;
     margin:0% 0 1% 0;
-    height: 13%;
+    /*height: 13%;*/
     border-bottom: 2px solid #1f53c5
 
 }
@@ -357,10 +354,10 @@ ul{
     display: block;
     width: 80%;
     background-color: #24303c;
-    padding: 1%;
+    /*padding: 0%;*/
     border-radius: 4px;
     margin:0;
-    height: 25%;
+    height: 30%;
     border-bottom: 2px solid #1f53c5
 
 }
@@ -371,12 +368,10 @@ ul{
     border:none;
     color:white;
     margin: 1% 0 0 0;
-
-
     font-size: 3.5vw;
 }
 .pie{
-    position: relative;
+    /*position: relative;*/
     display:flex;
     grid-area: pie;
     z-index: 10;
@@ -456,33 +451,275 @@ ul{
     margin: 0;
     
 }
-@media (min-width: 1000px) {
+/* adaptación para monitores de computadoras*/
+@media screen and (min-width: 1000px) {
     .cuerpo {
-        grid-template-columns: repeat(8, 1fr);
+        max-height: calc(8500px);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.2fr;
         grid-template-areas:
-        "nav nav nav nav nav nav nav nav"
-        "head head head head  head head publi publi"
-        "mi mi mi mi mi mi publi publi "
-        "servi servi servi servi"
-        "gale gale gale gale"
-        "proyec proyec proyec proyec"
-        "contac contac contac contac"
-        "pie pie pie pie"
-        "cola cola cola cola"
-        "publi publi publi publi"
+        "nav nav nav nav nav publi"
+        "head head head head  head publi"
+        "mi mi mi mi mi publi "
+        "servi servi servi servi servi publi"
+        "gale gale gale gale gale gale publi"
+        "proyec proyec proyec proyec proyec publi"
+        "contac contac contac contac contac publi"
+        "pie pie pie pie pie publi "
+        "cola cola cola cola cola publi"
+        
         "config config config config"
         ;
     }
-    .navegador{
-        height: 10%;
-        background-color: #1f53c5;
+    .fondo{
+        position: absolute;
+        z-index: 1;
+        display:flex;
+        justify-content: right;
+        width: 77%;  
+        background-color: #0e2f77;     
+    }
+    .img1{
+        max-width:30%;
+        height: min(60%,90px);
+        filter: grayscale(40%);
+        float: right;
+    }
+    .navegador{  
+        float: inline-start;      
+        min-height:5%;
+        display:flex;
+        justify-content: left;
+        align-items: top;    
+             
+    }
+    .navegador ul{
+        padding: 1.2%;
+        padding-left: 5%;
+        width: 100%;          
+    }
+    .navegador li{         
+        margin-left: 1%; 
+        font-size: 2vw;       
+            
+    }       
+       
+    .dropdown-content {       
+        background-color: #d8d4d4;   
+        padding: 2%;         
+    }      
+    .dropbtn{
+        font-size: 1.9vw;          
+    }
+    .dropdown-content a:hover {background-color: #b4a71b}    
+    h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    
+    h3{
+        font-size: 2.5vw;
+    }
+    p{
+        font-size: 1.8vw;
+    }
+    .cabecera{
+        z-index: 10;
+        margin-top: 4%;
+        padding: 2%;        
+    }
+    .cabecera h1{
+        margin-top: 3%;
+        font-size: 4vw;              
+        transform: translate(12%,30%);   
+        
+    }
+    .cabecera p{        
+        margin-top: 10%;  
+        font-size: 2vw;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #361a9a;
+    } 
+    .sobremi{
+        position: relative;
+           
+        grid-area: mi;
+        margin-top: 0%;
+        padding: 4%;
+        z-index: 10;
+        border-bottom: none;
+    }
+    .sobremi li{
+        margin-top: 4%;
+    }
+    
+    .sobremi h3,p{
+        margin-top: 0%;
+        
+    }
+    .sobremi h3{
+        text-decoration: underline black;
+    } 
+    .sobremi h2{
+        text-decoration: underline black;
+        text-align: center;
+        margin: 5%;
+        margin-bottom: 7%;    
+    } 
+    .contactame{
+        /*position: relative;*/
+        /*display: block; */ 
+        padding: 1% 1% 2% 7%;
+        grid-area: contac;
+        z-index: 10;
+        background: linear-gradient(120deg,#2980b9,#8e44ad);
+        font-family: 'calibri';
+        margin: 0;
+        height: 100%;
+        overflow: auto;
+        border-bottom: 2px solid  #122142;
+    }
+    .contactame h3{
+        color:white; 
+        margin: 0px; 
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .form{
+        
+        border-width: 0 0 2px 0;       
+        width: 100%;
+        height: 50%;
+        font-size: 6vh ; 
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .input{
+        width: 70%;
+        background-color: #24303c;
+        padding: 0%;
+        border-radius: 4px;
+        margin:0% 0 0% 0;
+        height: 20%;
+        border-bottom: 2px solid #1f53c5
+    
+    }
+    .input2{
+        display: block;
+        width: 80%;
+        background-color: #24303c;
+        padding: 1%;
+        border-radius: 4px;
+        margin-top:2%;
+        height: 50%;
+        border-bottom: 2px solid #1f53c5
+    
+    }
+    .boton{
+        width: 10%;
+        border-radius: 3px;
+        background-color: #0e2f77;
+        border:none;
+        color:white;
+        margin: 0% 0 0 0;
+    
+    
+        font-size: 1.5vw;
+    }
+    .pie{
+        /*position: relative;*/
+        display:flex;
+        grid-area: pie;
+        z-index: 10;
+        background-color: orange;
+        border-bottom: 2px solid  #122142;
+        height: 80%;
+           
+    }
+    .pie p{
+        padding: 3%;
+        margin: 2%;
+        outline: 5px outset rgba(170,50,220,.6);
+        border-radius: 2rem;
+        text-align-last: center;
+    }
+    .img2{
+        max-width: 17%;
+        
     }
     .publi{
-        float: right;
-        min-height: 8%;
-        max-height:9%;
-        width: 100%;
+        min-height: 100%;
+        max-height:100%;      
+        width: 23%;
+        padding-top:2% ;
+        padding-bottom: 20%;
+        position: fixed;        
+        left: 77%;
+        grid-area: publi;
+        z-index: 10;
+        background-color: #c1b5c8;
+        top:calc(8.5%);
+        display: flex;        
+        justify-content: center;   
+        align-items: flex-start;
+      
     }
+    
+    .gif-1{
+        margin: 0 0 0 0;
+        padding: 0;
+        transform: 0;
+        align-items: center;
+        }
+    .cola{
+        min-height: 0;
+        max-height:0;
+        width: 100%;
+        position: relative;
+        grid-area: publi;
+        z-index: 1;
+        background-color: #c1b5c8;
+        display:flex;
+        justify-content:center;
+        
+    }
+    .menu{
+        width: 100%;
+        margin: 0 0 0 5%; 
+        display: flex;
+        justify-content: left;
+         
+    }
+    .config{
+        
+        min-height: 4%;
+        max-height:5%;
+        width:  min(50%,180px);    
+        position: fixed;
+        grid-area: config;
+        z-index: 13;
+        background-color: #c1b5c8;
+        top:93%;
+        display: flex;
+        justify-content: left;
+        
+        align-content: flex-end;
+        border-radius:30px;
+        
+    }
+    .png-2{
+        transform: scale(0.3);
+        padding: 0;
+        margin: 0;
+        
+    }
+
 
   }
 
