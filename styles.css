@@ -479,7 +479,7 @@ ul{
         background-color: #0e2f77;     
     }
     .img1{
-        max-width:30%;
+        max-width:100%;
         height: min(60%,90px);
         filter: grayscale(40%);
         float: right;
